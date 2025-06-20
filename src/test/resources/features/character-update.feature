@@ -10,7 +10,7 @@ Feature: Character Api Update
   Scenario Outline: PIVIDAL-0001-CA1-Update existing character
     * def characterId = 4
     Given url apiUrl + '/' + characterId
-    * def body = read('data/character-body.json')
+    * def body = read('../data/character-body.json')
     * set body.name = '<name>'
     * set body.alterego = '<alterego>'
     * set body.description = '<description>'
@@ -30,7 +30,7 @@ Feature: Character Api Update
   Scenario Outline: PIVIDAL-0001-CA1-Update unexisting character
     * def characterId = 9999
     Given url apiUrl + '/' + characterId
-    * def body = read('data/character-body.json')
+    * def body = read('../data/character-body.json')
     * set body.name = '<name>'
     * set body.alterego = '<alterego>'
     * set body.description = '<description>'
