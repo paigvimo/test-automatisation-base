@@ -23,7 +23,7 @@ Feature: Character Api Search
     * match response.description == '<description>'
     Examples:
       | name         | alterego | description         | powers                                 |
-      | Green Guardian  | Leo    | Protector of the Forest  | ["Nature Control", "Healing"]         |
+      | Black Widow  | Natasha Romanoff    | Elite spy and martial artist  | ["Martial Arts", "Agility"]         |
 
   @id:2 @SaveCharacterWithDuplicatedName
   Scenario Outline: PIVIDAL-0001-CA2-Save characters with duplicated name
@@ -40,10 +40,10 @@ Feature: Character Api Search
     * match response.error == 'Character name already exists'
     Examples:
       | name         | alterego | description         | powers                                 |
-      | Blue Ranger  | Billy    | Blue Power Ranger  | ["Intelligence", "Technology"]         |
+      | Iron Man  | Tony Stark    | Genius billionaire in a high-tech armored suit  | ["Powered Armor", "Flight"]         |
 
   @id:3 @SaveCharacterWithInvalidData
-  Scenario: PIVIDAL-0001-CA3-Save characters with duplicated name
+  Scenario: PIVIDAL-0001-CA3-Save characters with invalid data
     Given url apiUrl
     * def body = read('data/character-body.json')
     And request body
