@@ -5,7 +5,7 @@ Feature: Character Api Search
     * configure ssl = true
     * def apiUrl = 'http://bp-se-test-cabcd9b246a5.herokuapp.com/pividal/api/characters'
 
-  @id:1 @RetrieveAllCharacters
+  @id:1 @GetAllCharacters
   Scenario: PIVIDAL-0001-CA1-Search all characters
     Given url apiUrl
     When method get
