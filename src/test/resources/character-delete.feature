@@ -7,7 +7,7 @@ Feature: Character Api Search
 
   @id:1 @DeleteExistingCharacter
   Scenario: PIVIDAL-0001-CA1-Delete existing character
-    * def characterId = 9
+    * def characterId = 11
     Given url apiUrl + '/' + characterId
     When method delete
     Then status 204
