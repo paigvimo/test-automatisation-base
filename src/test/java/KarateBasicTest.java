@@ -6,8 +6,11 @@ class KarateBasicTest {
     }
     @Karate.Test
     Karate testBasic() {
-        return Karate.run("classpath:character-save.feature")
-                .tags("@SaveNewCharacter");
+        return Karate.run("classpath:character-search.feature",
+                "classpath:character-save.feature",
+                "classpath:character-update.feature",
+                "classpath:character-delete.feature"
+        );
     }
 
 }

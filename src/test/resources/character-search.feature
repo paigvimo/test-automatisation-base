@@ -15,7 +15,7 @@ Feature: Character Api Search
 
   @id:2 @ExistingCharacterSearchById
   Scenario: PIVIDAL-0001-CA2-Search a existing character given id
-    * def characterId = 1
+    * def characterId = 3
     Given url apiUrl + '/' + characterId
     When method get
     Then status 200
