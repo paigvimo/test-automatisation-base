@@ -1,5 +1,5 @@
 @REQ_PIVIDAL-0001 @karate @AutomationTest @CharacterSave
-Feature: Character Api Search
+Feature: Character Api Save
 
   Background:
     * configure ssl = true

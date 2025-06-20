@@ -1,5 +1,5 @@
 @REQ_PIVIDAL-0001 @karate @AutomationTest @CharacterDelete
-Feature: Character Api Search
+Feature: Character Api Delete
 
   Background:
     * configure ssl = true
